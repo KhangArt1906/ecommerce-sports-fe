@@ -104,4 +104,12 @@ export const allNav = [
     role: "provider",
     path: "/provider/dashboard/chat-support",
   },
+  // Profile Provider Page
+  {
+    id: 17,
+    title: "Provider Profile",
+    icon: <AiOutlineDashboard />,
+    role: "provider",
+    path: "/provider/dashboard/profile",
+  },
 ];

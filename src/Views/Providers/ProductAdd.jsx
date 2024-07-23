@@ -118,7 +118,7 @@ const ProductAdd = () => {
 
   return (
     <div className="px-2 lg:px-7 pt-5">
-      <div className="w-full p-4 bg-[#25282a] rounded-md">
+      <div className="w-full p-4 bg-[#25282a] rounded-xl">
         <div className="flex justify-between items-center pb-4">
           <h1 className="text-[rgb(206,209,212)] text-xl font-bold">
             Add Product
@@ -138,7 +138,7 @@ const ProductAdd = () => {
             <div className="flex flex-col mb-3 md:flex-row gap-4 w-full text-[rgb(206,209,212)]">
               <div className="flex flex-col w-full gap-1">
                 {/* Fieldset of Product Information */}
-                <fieldset className="border border-[#595c5e] w-[700px] rounded-md px-4 py-3">
+                <fieldset className="border border-[#595c5e] w-[700px] rounded-xl px-4 py-3">
                   <legend className="font-bold text-xl text-white">
                     Product Information
                   </legend>
@@ -152,7 +152,7 @@ const ProductAdd = () => {
                         name="name"
                         id="name"
                         placeholder="Product Name"
-                        className="px-4 py-2 w-[330px] focus:border-[#078ee7] border border-[#2f3235] rounded-md outline-none text-black"
+                        className="px-4 py-2 w-[330px] focus:border-[#078ee7] border border-[#2f3235] rounded-xl outline-none text-black"
                       />
                     </div>
                     <div className="flex flex-col">
@@ -164,7 +164,7 @@ const ProductAdd = () => {
                         name="brand"
                         id="brand"
                         placeholder="Brand Product"
-                        className="px-4 py-2 w-[330px] focus:border-[#078ee7] border border-[#2f3235] rounded-md outline-none text-black"
+                        className="px-4 py-2 w-[330px] focus:border-[#078ee7] border border-[#2f3235] rounded-xl outline-none text-black"
                       />
                     </div>
                   </div>
@@ -181,7 +181,7 @@ const ProductAdd = () => {
                         name="category"
                         id="category"
                         placeholder="--Choose Category--"
-                        className="px-4 py-2 w-[330px] focus:border-[#078ee7] border border-[#2f3235] rounded-md outline-none text-black"
+                        className="px-4 py-2 w-[330px] focus:border-[#078ee7] border border-[#2f3235] rounded-xl outline-none text-black"
                       />
                       <div
                         className={`absolute top-[101%] bg-[#25282a] w-full transition-all ${
@@ -192,7 +192,7 @@ const ProductAdd = () => {
                           <input
                             value={searchValue}
                             onChange={categorySearch}
-                            className="px-3 py-1 focus:border-[#078ee7] outline-none bg-transparent border border-slate-700 rounded-md text-white overflow-hidden"
+                            className="px-3 py-1 focus:border-[#078ee7] outline-none bg-transparent border border-slate-700 rounded-xl text-white overflow-hidden"
                             type="text"
                             placeholder="Search"
                           />
@@ -227,7 +227,7 @@ const ProductAdd = () => {
                         name="stock"
                         id="stock"
                         placeholder="Stock"
-                        className="px-4 py-2 w-[330px] focus:border-[#078ee7] border border-[#2f3235] rounded-md outline-none text-black"
+                        className="px-4 py-2 w-[330px] focus:border-[#078ee7] border border-[#2f3235] rounded-xl outline-none text-black"
                       />
                     </div>
                   </div>
@@ -236,7 +236,7 @@ const ProductAdd = () => {
                   <div className="flex flex-col w-full gap-1 mt-3 mb-3">
                     <label htmlFor="description">Description</label>
                     <textarea
-                      className="px-4 py-2 focus:border-[#078ee7] outline-none bg-[#25282a] border border-slate-700 rounded-md text-white"
+                      className="px-4 py-2 focus:border-[#078ee7] outline-none bg-[#25282a] border border-slate-700 rounded-xl text-white"
                       onChange={inputHandle}
                       value={state.description}
                       cols={10}
@@ -290,7 +290,7 @@ const ProductAdd = () => {
                 </fieldset>
 
                 {/* Fieldset of Pricing */}
-                <fieldset className="border border-[#595c5e] w-[700px] rounded-md px-4 py-3">
+                <fieldset className="border border-[#595c5e] w-[700px] rounded-xl px-4 py-3">
                   <legend className="font-bold text-xl text-white">
                     Pricing
                   </legend>
@@ -304,7 +304,7 @@ const ProductAdd = () => {
                         name="price"
                         id="price"
                         placeholder="Price"
-                        className="px-4 py-2 w-[330px] focus:border-[#078ee7] border border-[#2f3235] rounded-md outline-none text-black"
+                        className="px-4 py-2 w-[330px] focus:border-[#078ee7] border border-[#2f3235] rounded-xl outline-none text-black"
                       />
                     </div>
                     <div className="flex flex-col">
@@ -316,7 +316,7 @@ const ProductAdd = () => {
                         name="discount"
                         id="discount"
                         placeholder="% Discount"
-                        className="px-4 py-2 w-[330px] focus:border-[#078ee7] border border-[#2f3235] rounded-md outline-none text-black"
+                        className="px-4 py-2 w-[330px] focus:border-[#078ee7] border border-[#2f3235] rounded-xl outline-none text-black"
                       />
                     </div>
                   </div>
@@ -324,7 +324,7 @@ const ProductAdd = () => {
 
                 {/* Button Add */}
                 <div className="flex w-[700px] justify-end">
-                  <button className="bg-[#377dff] hover:shadow-blue-500/30 hover:shadow-md text-white rounded-md px-7 py-2 my-2">
+                  <button className="bg-[#377dff] hover:shadow-blue-500/30 hover:shadow-md text-white rounded-xl px-7 py-2 my-2">
                     Add Product
                   </button>
                 </div>

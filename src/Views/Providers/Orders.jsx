@@ -11,8 +11,8 @@ const Orders = () => {
 
   return (
     <div className="px-2 lg:px-7 pt-5">
-      <h1 className="text-[#25282a] font-semibold text-lg mb-3">Orders</h1>
-      <div className="w-full p-4 bg-[#25282a] rounded-md">
+      <h1 className="text-[#feffff] font-semibold text-lg mb-3">Orders</h1>
+      <div className="w-full p-4 bg-[#25282a] rounded-xl">
         <SearchInput
           setPerPage={setPerPage}
           setSearchValue={setSearchValue}
@@ -74,7 +74,7 @@ const Orders = () => {
                   >
                     <div className="flex justify-start items-center gap-4">
                       {/* Edit Btn */}
-                      <Link className="p-[6px] bg-[#1f84e3] rounded hover:shadow-lg hover:shadow-slate-600">
+                      <Link className="p-[6px] flex items-center gap-2 bg-[#25282a] text-[#d2d3d4] hover:shadow-lg hover:shadow-zinc-700">
                         <FaEye />
                       </Link>
                     </div>

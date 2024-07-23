@@ -17,6 +17,9 @@ const ChatProviderAdmin = lazy(() =>
 const ChatProviderCustomer = lazy(() =>
   import("../../Views/Providers/ChatProviderCustomer")
 );
+const ProviderProfile = lazy(() =>
+  import("../../Views/Providers/ProviderProfile")
+);
 
 export const providerRoutes = [
   {
@@ -76,6 +79,13 @@ export const providerRoutes = [
   {
     path: "/provider/dashboard/chat-customer",
     element: <ChatProviderCustomer />,
+    role: "provider",
+    status: "active",
+  },
+  // Profile Provider
+  {
+    path: "/provider/dashboard/profile",
+    element: <ProviderProfile />,
     role: "provider",
     status: "active",
   },

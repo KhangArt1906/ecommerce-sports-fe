@@ -9,7 +9,7 @@ const Dashboard = () => {
     <div className="px-2 md:px-7 py-5">
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7">
         {/* Grid Container */}
-        <div className="flex justify-between items-center p-5 bg-[#1e2022] rounded-md gap-3">
+        <div className="flex justify-between items-center p-5 bg-[#1e2022] rounded-xl gap-3">
           <div className="flex flex-col justify-start items-start text-white">
             <h2 className="text-3xl font-bold t">$1906</h2>
             <span className="text-md font-medium ">Total Sports Sales: </span>
@@ -21,7 +21,7 @@ const Dashboard = () => {
         </div>
 
         {/* Grid Container 2 */}
-        <div className="flex justify-between items-center p-5 bg-[#1e2022] rounded-md gap-3">
+        <div className="flex justify-between items-center p-5 bg-[#1e2022] rounded-xl gap-3">
           <div className="flex flex-col justify-start items-start text-white">
             <h2 className="text-3xl font-bold t">$1906</h2>
             <span className="text-md font-medium ">Products: </span>
@@ -33,7 +33,7 @@ const Dashboard = () => {
         </div>
 
         {/* Grid Container 3 */}
-        <div className="flex justify-between items-center p-5 bg-[#1e2022] rounded-md gap-3">
+        <div className="flex justify-between items-center p-5 bg-[#1e2022] rounded-xl gap-3">
           <div className="flex flex-col justify-start items-start text-white">
             <h2 className="text-3xl font-bold t">$1906</h2>
             <span className="text-md font-medium ">Sellers: </span>
@@ -45,7 +45,7 @@ const Dashboard = () => {
         </div>
 
         {/* Grid Container 4 */}
-        <div className="flex justify-between items-center p-5 bg-[#1e2022] rounded-md gap-3">
+        <div className="flex justify-between items-center p-5 bg-[#1e2022] rounded-xl gap-3">
           <div className="flex flex-col justify-start items-start text-white">
             <h2 className="text-3xl font-bold t">$1906</h2>
             <span className="text-md font-medium ">Orders: </span>
@@ -58,7 +58,7 @@ const Dashboard = () => {
       </div>
 
       {/* Orders Recent */}
-      <div className="w-full p-4 bg-[#1e2022] rounded-md mt-6">
+      <div className="w-full p-4 bg-[#1e2022] rounded-xl mt-6">
         <div className="flex justify-between items-center">
           <h2 className="font-semibold text-lg text-white pb-3">
             Recent Orders

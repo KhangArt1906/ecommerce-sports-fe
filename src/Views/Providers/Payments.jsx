@@ -18,7 +18,7 @@ const Payments = () => {
         <div className="w-[25%] p-2 whitespace-nowrap">{index + 1}</div>
         <div className="w-[25%] p-2 whitespace-nowrap">$1906</div>
         <div className="w-[25%] p-2 whitespace-nowrap">
-          <span className="py-[1px] px-[5px] bg-yellow-600 text-black rounded-md text-sm">
+          <span className="py-[1px] px-[5px] bg-yellow-600 text-black rounded-xl text-sm">
             Pending
           </span>
         </div>
@@ -31,7 +31,7 @@ const Payments = () => {
     <div className="px-2 md:px-7 py-5">
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 mb-5">
         {/* Grid Container */}
-        <div className="flex justify-between items-center p-5 bg-[#1e2022] rounded-md gap-3">
+        <div className="flex justify-between items-center p-5 bg-[#25282a] rounded-xl gap-3">
           <div className="flex flex-col justify-start items-start text-white">
             <h2 className="text-2xl font-bold t">$1304</h2>
             <span className="text-sm font-bold ">Total Sports Sales: </span>
@@ -43,7 +43,7 @@ const Payments = () => {
         </div>
 
         {/* Grid Container 2 */}
-        <div className="flex justify-between items-center p-5 bg-[#1e2022] rounded-md gap-3">
+        <div className="flex justify-between items-center p-5 bg-[#25282a] rounded-xl gap-3">
           <div className="flex flex-col justify-start items-start text-white">
             <h2 className="text-2xl font-bold t">$2505</h2>
             <span className="text-sm font-bold ">Available Amount </span>
@@ -55,7 +55,7 @@ const Payments = () => {
         </div>
 
         {/* Grid Container 3 */}
-        <div className="flex justify-between items-center p-5 bg-[#1e2022] rounded-md gap-3">
+        <div className="flex justify-between items-center p-5 bg-[#25282a] rounded-xl gap-3">
           <div className="flex flex-col justify-start items-start text-white">
             <h2 className="text-2xl font-bold t">$250</h2>
             <span className="text-sm font-bold ">Withdraw Amount </span>
@@ -67,7 +67,7 @@ const Payments = () => {
         </div>
 
         {/* Grid Container 4 */}
-        <div className="flex justify-between items-center p-5 bg-[#1e2022] rounded-md gap-3">
+        <div className="flex justify-between items-center p-5 bg-[#25282a] rounded-xl gap-3">
           <div className="flex flex-col justify-start items-start text-white">
             <h2 className="text-2xl font-bold t">$0</h2>
             <span className="text-sm font-bold ">Pending Amount: </span>
@@ -83,7 +83,7 @@ const Payments = () => {
 
       {/* Send  */}
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-2 pb-4">
-        <div className="bg-[#1e2022] text-white rounded-md p-5">
+        <div className="bg-[#25282a] text-white rounded-xl p-5">
           <h2 className="text-lg">Send Request</h2>
           <div className="pt-5 mb-5">
             <form>
@@ -92,10 +92,10 @@ const Payments = () => {
                   type="number"
                   min="0"
                   className="px-3 py-2 md:w-[45%] focus:border-blue-500 outline-none bg-[#ebedf1] 
-                  border border-slate-600 rounded-md text-black"
+                  border border-slate-600 rounded-xl text-black"
                   name="amount"
                 />
-                <button className="bg-[#377dff] hover:shadow-blue-500/30 hover:shadow-md text-white rounded-md px-7 py-2">
+                <button className="bg-[#377dff] hover:shadow-blue-500/30 hover:shadow-md text-white rounded-xl px-7 py-2">
                   Submit
                 </button>
               </div>
@@ -106,7 +106,7 @@ const Payments = () => {
           <div>
             <h2 className="text-lg pb-4">Send Request</h2>
             <div className="w-full overflow-x-auto">
-              <div className="flex bg-[#1e2022] uppercase font-bold text-white text-xs min-w-[340px] rounded-md">
+              <div className="flex bg-[#1e2022] uppercase font-bold text-white text-xs min-w-[340px] rounded-xl">
                 <div className="w-[25%] p-2">No</div>
                 <div className="w-[25%] p-2">Amount</div>
                 <div className="w-[25%] p-2">Status</div>
@@ -130,12 +130,12 @@ const Payments = () => {
         </div>
 
         {/* Success */}
-        <div className="bg-[#1e2022] text-white rounded-md p-5">
+        <div className="bg-[#25282a] text-white rounded-xl p-5">
           <h2 className="text-lg">Success Withdraw</h2>
 
           <div>
             <div className="w-full overflow-x-auto">
-              <div className="flex bg-[#1e2022] uppercase font-bold text-white text-xs min-w-[340px] rounded-md">
+              <div className="flex bg-[#1e2022] uppercase font-bold text-white text-xs min-w-[340px] rounded-xl">
                 <div className="w-[25%] p-2">No</div>
                 <div className="w-[25%] p-2">Amount</div>
                 <div className="w-[25%] p-2">Status</div>

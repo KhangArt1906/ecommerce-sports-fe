@@ -27,7 +27,7 @@ const Register = () => {
     justify-center items-center"
     >
       <div className="w-[350px] text-[#fff] p-2">
-        <div className="bg-[#6f68d1] p-4 rounded-md">
+        <div className="bg-[#6f68d1] p-4 rounded-xl">
           <h2 className="text-xl mb-3 font-bold">
             Welcome to Ecommerce Sports Clothes
           </h2>
@@ -41,7 +41,7 @@ const Register = () => {
               <input
                 onChange={inputHandle}
                 value={state.name}
-                className="px-3 py-2 outline-none border border-slate-400 bg-transparent rounded-md"
+                className="px-3 py-2 outline-none border border-slate-400 bg-transparent rounded-xl"
                 id="name"
                 type="text"
                 name="name"
@@ -56,7 +56,7 @@ const Register = () => {
               <input
                 onChange={inputHandle}
                 value={state.email}
-                className="px-3 py-2 outline-none border border-slate-400 bg-transparent rounded-md"
+                className="px-3 py-2 outline-none border border-slate-400 bg-transparent rounded-xl"
                 id="email"
                 type="email"
                 name="email"
@@ -71,7 +71,7 @@ const Register = () => {
               <input
                 onChange={inputHandle}
                 value={state.password}
-                className="px-3 py-2 outline-none border border-slate-400 bg-transparent rounded-md"
+                className="px-3 py-2 outline-none border border-slate-400 bg-transparent rounded-xl"
                 id="password"
                 type="password"
                 name="password"
@@ -93,7 +93,7 @@ const Register = () => {
 
             <button
               className="bg-slate-800 w-full hover:shadow-blue-300/hover:shadow-lg 
-            text-white rounded-md px-7 py-2 mb-3"
+            text-white rounded-xl px-7 py-2 mb-3"
             >
               Sign up for an account
             </button>
@@ -117,7 +117,7 @@ const Register = () => {
 
             <div className="flex justify-center items-center gap-3">
               <div
-                className="w-[135px] h-[35px] flex rounded-md bg-orange-700
+                className="w-[135px] h-[35px] flex rounded-xl bg-orange-700
                 shadow-lg hover:shadow-orange-700/50 justify-center cursor-pointer
                 items-center overflow-hidden"
               >
@@ -127,7 +127,7 @@ const Register = () => {
               </div>
 
               <div
-                className="w-[135px] h-[35px] flex rounded-md bg-blue-700
+                className="w-[135px] h-[35px] flex rounded-xl bg-blue-700
                 shadow-lg hover:shadow-blue-700/50 justify-center cursor-pointer
                 items-center overflow-hidden"
               >

@@ -11,12 +11,12 @@ const Providers = () => {
 
   return (
     <div className="px-2 lg:px-7 pt-5">
-      <div className="w-full p-4 bg-[#1e2022] rounded-md">
+      <div className="w-full p-4 bg-[#1e2022] rounded-xl">
         <div className="flex justify-between items-center">
           <select
             onChange={(e) => setPerPage(parseInt(e.target.value))}
             className="px-4 py-2 hover:border-indigo-100 outline-none bg-white 
-            border border-slate-700 rounded-md text-black
+            border border-slate-700 rounded-xl text-black
           "
           >
             <option value="5">5</option>
@@ -26,7 +26,7 @@ const Providers = () => {
           </select>
 
           <input
-            className="px-4 py-2 focus:border-indigo-100 outline-none bg-white border border-slate-700 rounded-md text-black"
+            className="px-4 py-2 focus:border-indigo-100 outline-none bg-white border border-slate-700 rounded-xl text-black"
             type="text"
             placeholder="Search"
           />

@@ -9,7 +9,7 @@ const ChatProviderCustomer = () => {
   return (
     <div className="px-2 lg:px-7 py-5">
       {/* Container Background Live Chat */}
-      <div className="w-full bg-[#1e2022] px-4 py-4 rounded-md h-[calc(100vh-140px)]">
+      <div className="w-full bg-[#1e2022] px-4 py-4 rounded-xl h-[calc(100vh-140px)]">
         <div className="flex w-full h-full relative">
           <div
             className={`w-[280px] h-full absolute z-10 ${
@@ -28,11 +28,11 @@ const ChatProviderCustomer = () => {
               </div>
 
               <div
-                className={`h-[60px] flex justify-start gap-2 items-center text-white px-2 py-2 rounded-md cursor-pointer bg-[#3f7c70]`}
+                className={`h-[60px] flex justify-start gap-2 items-center text-white px-2 py-2 rounded-xl cursor-pointer bg-[#25282a]`}
               >
                 <div className="relative">
                   <img
-                    className="w-[38px] h-[38px] border-white border-2 max-w-[38px] p-[2px] rounded-full object-cover"
+                    className="w-[38px] h-[38px] max-w-[38px] p-[2px] rounded-full object-cover"
                     src="/images/ronaldo.jpg"
                     alt="Ronaldo"
                   />
@@ -54,7 +54,7 @@ const ChatProviderCustomer = () => {
               >
                 <div className="relative">
                   <img
-                    className="w-[38px] h-[38px] border-white border-2 max-w-[38px] p-[2px] rounded-full object-cover"
+                    className="w-[38px] h-[38px] max-w-[38px] p-[2px] rounded-full object-cover"
                     src="/images/ronaldo.jpg"
                     alt="Ronaldo"
                   />
@@ -74,7 +74,7 @@ const ChatProviderCustomer = () => {
               >
                 <div className="relative">
                   <img
-                    className="w-[38px] h-[38px] border-white border-2 max-w-[38px] p-[2px] rounded-full object-cover"
+                    className="w-[38px] h-[38px] max-w-[38px] p-[2px] rounded-full object-cover"
                     src="/images/ronaldo.jpg"
                     alt="Ronaldo"
                   />
@@ -97,7 +97,7 @@ const ChatProviderCustomer = () => {
                 <div className="flex justify-start items-center gap-3">
                   <div className="relative">
                     <img
-                      className="w-[38px] h-[38px] border-green-400 border-2 max-w-[38px] p-[2px] rounded-full object-cover"
+                      className="w-[38px] h-[38px] max-w-[38px] p-[2px] rounded-full object-cover"
                       src="/images/messi.png"
                       alt="Ronaldo"
                     />
@@ -121,13 +121,14 @@ const ChatProviderCustomer = () => {
               </div>
             </div>
 
+            {/* Chat Container */}
             <div className="py-4">
-              <div className="bg-white h-[calc(100vh-280px)] rounded-md p-3 overflow-y-auto">
+              <div className="bg-[#25282a] h-[calc(100vh-280px)] rounded-xl p-3 overflow-y-auto">
                 <div className="w-full flex justify-start items-center">
                   <div className="flex justify-start items-start gap-2 md:px-3 py-2 max-w-full lg:max-w-[85%]">
                     <div>
                       <img
-                        className="w-[36px] h-[36px] border-2 border-black rounded-full object-cover max-w-[38px] p-[3px]"
+                        className="w-[36px] h-[36px] rounded-full object-cover max-w-[38px] p-[3px]"
                         src="/images/ronaldo.jpg"
                         alt="Ronaldo"
                       />
@@ -150,7 +151,7 @@ const ChatProviderCustomer = () => {
 
                     <div>
                       <img
-                        className="w-[36px] h-[36px] border-2 border-black rounded-full object-cover max-w-[38px] p-[3px]"
+                        className="w-[36px] h-[36px] rounded-full object-cover max-w-[38px] p-[3px]"
                         src="/images/messi.png"
                         alt="Ronaldo"
                       />
@@ -162,7 +163,7 @@ const ChatProviderCustomer = () => {
                   <div className="flex justify-start items-start gap-2 md:px-3 py-2 max-w-full lg:max-w-[85%]">
                     <div>
                       <img
-                        className="w-[36px] h-[36px] border-2 border-black rounded-full object-cover max-w-[38px] p-[3px]"
+                        className="w-[36px] h-[36px] rounded-full object-cover max-w-[38px] p-[3px]"
                         src="/images/ronaldo.jpg"
                         alt="Ronaldo"
                       />
@@ -180,11 +181,11 @@ const ChatProviderCustomer = () => {
 
             <form className="flex gap-3">
               <input
-                className="w-full flex justify-between px-2 border border-slate-500 items-center py-[5px] focus:border-blue-500 rounded-md outline-none bg-transparent text-white"
+                className="w-full flex justify-between px-2 border border-slate-500 items-center py-[5px] focus:border-blue-500 rounded-xl outline-none bg-transparent text-white"
                 type="text"
                 placeholder="Aa"
               />
-              <button className="shadow-lg bg-transparent bg-blue-600 hover:shadow-zinc-700 text-semibold w-[65px] h-[35px] rounded-md flex justify-center items-center">
+              <button className="shadow-lg border-2 border-blue-800 text-semibold w-[65px] h-[35px] rounded-xl flex justify-center items-center">
                 <FaArrowRight className="text-white" />
               </button>
             </form>

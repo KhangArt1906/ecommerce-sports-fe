@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SearchInput from "../Components/SearchInput";
 import { Link } from "react-router-dom";
-import { FaEdit, FaTrash } from "react-icons/fa";
+import { FaEdit, FaPen, FaTrash } from "react-icons/fa";
 import Pagination from "../Pagination";
 
 const DiscountProduct = () => {
@@ -11,10 +11,10 @@ const DiscountProduct = () => {
 
   return (
     <div className="px-2 lg:px-7 pt-5">
-      <h1 className="text-[#25282a] font-semibold text-lg mb-3">
+      <h1 className="text-[#feffff] font-semibold text-lg mb-3">
         Discount Products
       </h1>
-      <div className="w-full p-4 bg-[#25282a] rounded-md">
+      <div className="w-full p-4 bg-[#25282a] rounded-xl">
         <SearchInput
           setPerPage={setPerPage}
           setSearchValue={setSearchValue}
@@ -23,7 +23,10 @@ const DiscountProduct = () => {
 
         <div className="relative overflow-x-auto mt-5">
           <table className="w-full text-sm text-left text-white uppercase border-b border-slate-700">
-            <thead className="text-sm text-white uppercase border-b border-slate-500">
+            <thead
+              align="center"
+              className="text-sm text-white uppercase border-b border-slate-500"
+            >
               <tr>
                 <th scope="col" className="py-3 px-4 font-medium">
                   Number
@@ -57,7 +60,7 @@ const DiscountProduct = () => {
 
             <tbody>
               {[1, 2, 3, 4, 5].map((d, i) => (
-                <tr key={i}>
+                <tr key={i} align="center">
                   <th
                     scope="row"
                     className="py-1 px-4 font-medium whitespace-nowrap"
@@ -69,7 +72,7 @@ const DiscountProduct = () => {
                     className="py-1 px-4 font-medium whitespace-nowrap"
                   >
                     <img
-                      className="w-[60px] h-[60px]"
+                      className="w-[60px] h-[60px] rounded-xl"
                       src="/images/ao_liverpool.png"
                       alt="Liverpool Shirt"
                     />
@@ -102,7 +105,7 @@ const DiscountProduct = () => {
                     scope="row"
                     className="py-1 px-4 font-medium whitespace-nowrap"
                   >
-                    %3
+                    3%
                   </th>
                   <th
                     scope="row"
@@ -116,12 +119,14 @@ const DiscountProduct = () => {
                   >
                     <div className="flex justify-start items-center gap-4">
                       {/* Edit Btn */}
-                      <Link className="p-[6px] bg-[#1f84e3] rounded hover:shadow-lg hover:shadow-slate-600">
-                        <FaEdit />
+                      <Link className="p-[6px] bg-[#1c1f22] text-[#d2d3d4] rounded hover:shadow-lg hover:shadow-slate-600 flex items-center gap-2">
+                        <FaPen />
+                        Edit
                       </Link>
                       {/* Delete Btn */}
-                      <Link className="p-[6px] bg-[#0f0d0d] rounded hover:shadow-lg hover:shadow-zinc-600">
+                      <Link className="p-[6px] bg-[#1c1f22] text-[#d2d3d4] rounded hover:shadow-lg hover:shadow-zinc-600 flex items-center gap-2">
                         <FaTrash />
+                        Delete
                       </Link>
                     </div>
                   </th>

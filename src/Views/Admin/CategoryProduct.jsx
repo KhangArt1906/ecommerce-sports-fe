@@ -12,7 +12,7 @@ const CategoryProduct = () => {
 
   return (
     <div className="px-2 lg:px-7 pt-5">
-      <div className="flex lg:hidden justify-between items-center mb-5 p-4 bg-[#1e2022] rounded-md">
+      <div className="flex lg:hidden justify-between items-center mb-5 p-4 bg-[#1e2022] rounded-xl">
         <h1 className="text-white font-semibold text-lg">Category</h1>
         <button
           onClick={() => setShow(true)}
@@ -26,12 +26,12 @@ const CategoryProduct = () => {
       <div className="flex flex-wrap w-full">
         {/* First Container 7/12 */}
         <div className="w-full lg:w-7/12">
-          <div className="w-full p-4 bg-[#1e2022] rounded-md">
+          <div className="w-full p-4 bg-[#1e2022] rounded-xl">
             <div className="flex justify-between items-center">
               <select
                 onChange={(e) => setPerPage(parseInt(e.target.value))}
                 className="px-4 py-2 hover:border-indigo-100 outline-none bg-white 
-            border border-slate-700 rounded-md text-black
+            border border-slate-700 rounded-xl text-black
           "
               >
                 <option value="5">5</option>
@@ -41,7 +41,7 @@ const CategoryProduct = () => {
               </select>
 
               <input
-                className="px-4 py-2 focus:border-indigo-100 outline-none bg-white border border-slate-700 rounded-md text-black"
+                className="px-4 py-2 focus:border-indigo-100 outline-none bg-white border border-slate-700 rounded-xl text-black"
                 type="text"
                 placeholder="Search"
               />
@@ -131,7 +131,7 @@ const CategoryProduct = () => {
           } z-[999] top-0 transition-all duration-500 `}
         >
           <div className="w-full pl-5">
-            <div className="bg-[#1e2022] h-screen lg:h-auto px-3 py-2 lg:rounded-md text-white">
+            <div className="bg-[#1e2022] h-screen lg:h-auto px-3 py-2 lg:rounded-xl text-white">
               <div className="flex justify-between items-center mb-4 ">
                 <h1 className="text-white font-semibold text-xl mb-4 w-full text-center ">
                   Add Category Product
@@ -147,7 +147,7 @@ const CategoryProduct = () => {
                   <label htmlFor="name">Category Name</label>
 
                   <input
-                    className="px-4 py-2 focus:border-indigo-100 outline-none bg-white border border-slate-700 rounded-md text-black"
+                    className="px-4 py-2 focus:border-indigo-100 outline-none bg-white border border-slate-700 rounded-xl text-black"
                     type="text"
                     id="name"
                     name="category_name"
@@ -175,7 +175,7 @@ const CategoryProduct = () => {
                   />
 
                   <div>
-                    <button className="bg-white mx-auto flex justify-center items-center hover:shadow-black hover:shadow-md text-black rounded-md px-7 py-2 my-2">
+                    <button className="bg-white mx-auto flex justify-center items-center hover:shadow-black hover:shadow-md text-black rounded-xl px-7 py-2 my-2">
                       Add
                     </button>
                   </div>

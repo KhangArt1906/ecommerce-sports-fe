@@ -19,7 +19,7 @@ const Payment = () => {
         <div className="w-[25%] p-2 whitespace-nowrap">{index + 1}</div>
         <div className="w-[25%] p-2 whitespace-nowrap">$1906</div>
         <div className="w-[25%] p-2 whitespace-nowrap">
-          <span className="py-[1px] px-[5px] bg-yellow-600 text-black rounded-md text-sm">
+          <span className="py-[1px] px-[5px] bg-yellow-600 text-black rounded-xl text-sm">
             Pending
           </span>
         </div>
@@ -35,12 +35,12 @@ const Payment = () => {
 
   return (
     <div className="px-2 lg:px-7 pt-5">
-      <div className="w-full p-4 bg-[#1e2022] rounded-md">
+      <div className="w-full p-4 bg-[#1e2022] rounded-xl">
         <h2 className="text-xl font-medium pb-5 text-white">
           Withdraw Requests
         </h2>
         <div className="w-full overflow-x-auto">
-          <div className="flex bg-[#1e2022] uppercase font-bold text-white text-xs min-w-[340px] rounded-md">
+          <div className="flex bg-[#1e2022] uppercase font-bold text-white text-xs min-w-[340px] rounded-xl">
             <div className="w-[25%] p-2">No</div>
             <div className="w-[25%] p-2">Amount</div>
             <div className="w-[25%] p-2">Status</div>

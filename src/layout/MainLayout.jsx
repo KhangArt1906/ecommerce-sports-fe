@@ -7,7 +7,7 @@ const MainLayout = () => {
   const [showSidebar, setShowSidebar] = useState(false);
 
   return (
-    <div className="bg-[#f5f5f5] w-full min-h-screen">
+    <div className="bg-[#1e2022] w-full min-h-screen">
       <Header showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       <div className="ml-0 lg:ml-[260px] pt-[95px] transition-all">
