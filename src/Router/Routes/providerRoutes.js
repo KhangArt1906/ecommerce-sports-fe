@@ -9,6 +9,14 @@ const ProviderDashboard = lazy(() =>
 const DiscountProduct = lazy(() =>
   import("../../Views/Providers/DiscountProduct")
 );
+const Orders = lazy(() => import("../../Views/Providers/Orders"));
+const Payments = lazy(() => import("../../Views/Providers/Payments"));
+const ChatProviderAdmin = lazy(() =>
+  import("../../Views/Providers/ChatProviderAdmin")
+);
+const ChatProviderCustomer = lazy(() =>
+  import("../../Views/Providers/ChatProviderCustomer")
+);
 
 export const providerRoutes = [
   {
@@ -19,21 +27,56 @@ export const providerRoutes = [
   {
     path: "/provider/dashboard",
     element: <ProviderDashboard />,
-    ability: ["provider"],
+    role: "provider",
+    status: "active",
   },
   {
     path: "/provider/dashboard/add-product",
     element: <ProductAdd />,
-    ability: ["provider"],
+    role: "provider",
+    status: "active",
   },
   {
     path: "/provider/dashboard/products",
     element: <AllProducts />,
-    ability: ["provider"],
+    arole: "provider",
+    status: "active",
   },
   {
     path: "/provider/dashboard/discount-product",
     element: <DiscountProduct />,
-    ability: ["provider"],
+    role: "provider",
+    status: "active",
+  },
+  {
+    path: "/provider/dashboard/orders",
+    element: <Orders />,
+    role: "provider",
+    ability: ["active", "not active"],
+  },
+  {
+    path: "/provider/dashboard/payments",
+    element: <Payments />,
+    role: "provider",
+    status: "active",
+  },
+  // Chat Provider and Admin,
+  {
+    path: "/provider/dashboard/chat-support",
+    element: <ChatProviderAdmin />,
+    ability: ["active", "not active", "pending"],
+  },
+  // Chat Provider and Customer
+  {
+    path: "/provider/dashboard/chat-customer/:customerID",
+    element: <ChatProviderCustomer />,
+    role: "provider",
+    status: "active",
+  },
+  {
+    path: "/provider/dashboard/chat-customer",
+    element: <ChatProviderCustomer />,
+    role: "provider",
+    status: "active",
   },
 ];
