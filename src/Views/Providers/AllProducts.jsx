@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SearchInput from "../Components/SearchInput";
 import { Link } from "react-router-dom";
-import { FaEdit, FaPen, FaTrash } from "react-icons/fa";
+import { FaPen, FaTrash } from "react-icons/fa";
 import Pagination from "../Pagination";
 
 const AllProducts = () => {
@@ -119,7 +119,10 @@ const AllProducts = () => {
                   >
                     <div className="flex justify-start items-center gap-4">
                       {/* Edit Btn */}
-                      <Link className="p-[8px] bg-[#1c1f22] text-[#d2d3d4] rounded hover:shadow-lg hover:shadow-zinc-700 flex items-center gap-2">
+                      <Link
+                        to={`/provider/dashboard/edit-product/19`}
+                        className="p-[8px] bg-[#1c1f22] text-[#d2d3d4] rounded hover:shadow-lg hover:shadow-zinc-700 flex items-center gap-2"
+                      >
                         <FaPen />
                         Edit
                       </Link>

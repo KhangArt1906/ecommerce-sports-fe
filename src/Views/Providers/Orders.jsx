@@ -74,7 +74,10 @@ const Orders = () => {
                   >
                     <div className="flex justify-start items-center gap-4">
                       {/* Edit Btn */}
-                      <Link className="p-[6px] flex items-center gap-2 bg-[#25282a] text-[#d2d3d4] hover:shadow-lg hover:shadow-zinc-700">
+                      <Link
+                        to={`/provider/dashboard/order/details/19`}
+                        className="p-[6px] flex items-center gap-2 bg-[#25282a] text-[#d2d3d4] hover:shadow-lg hover:shadow-zinc-700"
+                      >
                         <FaEye />
                       </Link>
                     </div>

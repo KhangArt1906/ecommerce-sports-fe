@@ -42,8 +42,8 @@ const Header = ({ showSidebar, setShowSidebar }) => {
                 </span>
               </div>
               <img
-                className="w-[45px] h-[45px] rounded-full object-cover overflow-hidden"
-                src="http://localhost:3000/images/ronaldo.jpg"
+                className="w-[45px] h-[45px] rounded-full bg-white cursor-pointer object-cover overflow-hidden"
+                src="http://localhost:3000/images/avatar.png"
                 alt="Ronaldo"
               />
             </div>

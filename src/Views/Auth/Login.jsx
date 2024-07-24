@@ -25,8 +25,8 @@ const Login = () => {
       className="min-w-screen min-h-screen bg-[#cdcae9] flex
     justify-center items-center"
     >
-      <div className="w-[350px] text-[#fff] p-2">
-        <div className="bg-[#6f68d1] p-4 rounded-xl">
+      <div className="w-[400px] text-[#fff] p-2">
+        <div className="bg-[#25282a] p-4 rounded-xl">
           <h2 className="text-xl mb-3 font-bold">
             Welcome to Ecommerce Sports Clothes
           </h2>

@@ -30,8 +30,8 @@ const ChatProviderAdmin = () => {
                   <div className="flex justify-start items-start gap-2 md:px-3 py-2 max-w-full lg:max-w-[85%]">
                     <div>
                       <img
-                        className="w-[36px] h-[36px] rounded-full object-cover max-w-[38px] p-[3px]"
-                        src="/images/ronaldo.jpg"
+                        className="w-[36px] h-[36px] bg-white rounded-full object-cover max-w-[38px] p-[3px]"
+                        src="/images/avatar.png"
                         alt="Ronaldo"
                       />
                     </div>
@@ -65,8 +65,8 @@ const ChatProviderAdmin = () => {
                   <div className="flex justify-start items-start gap-2 md:px-3 py-2 max-w-full lg:max-w-[85%]">
                     <div>
                       <img
-                        className="w-[36px] h-[36px] border-2 border-black rounded-full object-cover max-w-[38px] p-[3px]"
-                        src="/images/ronaldo.jpg"
+                        className="w-[36px] h-[36px] bg-white border-2 border-black rounded-full object-cover max-w-[38px] p-[3px]"
+                        src="/images/avatar.png"
                         alt="Ronaldo"
                       />
                     </div>

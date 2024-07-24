@@ -55,7 +55,7 @@ const ProviderProfile = () => {
               {/* Start Card Profile */}
               <div className="flex flex-col w-[500px]">
                 {/* Edit Personal Information */}
-                <fieldset className="border border-[#595c5e] rounded-xl">
+                <fieldset className="border border-[#595c5e] px-2 rounded-xl">
                   <legend className="text-xl font-bold">Personal</legend>
                   <div className="px-0 md:px-5 py-2">
                     <div className="flex justify-between text-sm flex-col gap-2 p-4 rounded-xl relative">
@@ -103,7 +103,7 @@ const ProviderProfile = () => {
                 </fieldset>
 
                 {/* Edit Shop Information */}
-                <fieldset className="border border-[#595c5e] rounded-xl">
+                <fieldset className="border border-[#595c5e] px-2 py-1 rounded-xl">
                   <legend className="text-xl font-bold">Shop</legend>
                   <div className="px-0 md:px-5 py-2">
                     {!userInformation ? (

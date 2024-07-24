@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SearchInput from "../Components/SearchInput";
 import { Link } from "react-router-dom";
-import { FaEdit, FaPen, FaTrash } from "react-icons/fa";
+import { FaPen, FaTrash } from "react-icons/fa";
 import Pagination from "../Pagination";
 
 const DiscountProduct = () => {

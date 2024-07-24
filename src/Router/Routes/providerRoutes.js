@@ -2,6 +2,7 @@ import { lazy } from "react";
 
 const AllProducts = lazy(() => import("../../Views/Providers/AllProducts"));
 const ProductAdd = lazy(() => import("../../Views/Providers/ProductAdd"));
+const ProductEdit = lazy(() => import("../../Views/Providers/ProductEdit"));
 const HomePage = lazy(() => import("../../Views/Pages/HomePage"));
 const ProviderDashboard = lazy(() =>
   import("../../Views/Providers/ProviderDashboard")
@@ -10,6 +11,9 @@ const DiscountProduct = lazy(() =>
   import("../../Views/Providers/DiscountProduct")
 );
 const Orders = lazy(() => import("../../Views/Providers/Orders"));
+const ProviderOrdersDetail = lazy(() =>
+  import("../../Views/Providers/ProviderOrdersDetail")
+);
 const Payments = lazy(() => import("../../Views/Providers/Payments"));
 const ChatProviderAdmin = lazy(() =>
   import("../../Views/Providers/ChatProviderAdmin")
@@ -40,6 +44,12 @@ export const providerRoutes = [
     status: "active",
   },
   {
+    path: "/provider/dashboard/edit-product/:productID",
+    element: <ProductEdit />,
+    role: "provider",
+    status: "active",
+  },
+  {
     path: "/provider/dashboard/products",
     element: <AllProducts />,
     arole: "provider",
@@ -54,6 +64,12 @@ export const providerRoutes = [
   {
     path: "/provider/dashboard/orders",
     element: <Orders />,
+    role: "provider",
+    ability: ["active", "not active"],
+  },
+  {
+    path: "/provider/dashboard/order/details/:ordersID",
+    element: <ProviderOrdersDetail />,
     role: "provider",
     ability: ["active", "not active"],
   },
