@@ -1,8 +1,22 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { FaFacebook, FaGoogle } from "react-icons/fa";
-
+import { useDispatch, useSelector } from "react-redux";
+import { PropagateLoader } from "react-spinners";
+import { overrideStyle } from "../../Utils/utils";
+import {
+  messageClear,
+  provider_register,
+} from "../../Store/Reducers/authReducers";
+import toast from "react-hot-toast";
 const Register = () => {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const { loader, successMessage, errorMessage } = useSelector(
+    (state) => state.auth
+  );
+
   const [state, setState] = useState({
     name: "",
     email: "",
@@ -18,8 +32,23 @@ const Register = () => {
 
   const submit = (e) => {
     e.preventDefault();
-    console.log(state);
+    dispatch(provider_register(state));
   };
+
+  useEffect(() => {
+    //Announce Success in Register
+    if (successMessage) {
+      toast.success(successMessage);
+      dispatch(messageClear());
+      navigate("/");
+    }
+
+    //Announce Failed in Register
+    if (errorMessage) {
+      toast.error(errorMessage);
+      dispatch(messageClear());
+    }
+  }, [successMessage, errorMessage]);
 
   return (
     <div
@@ -92,10 +121,15 @@ const Register = () => {
             </div>
 
             <button
+              disabled={loader ? true : false}
               className="bg-slate-800 w-full hover:shadow-blue-300/hover:shadow-lg 
             text-white rounded-xl px-7 py-2 mb-3"
             >
-              Sign up for an account
+              {loader ? (
+                <PropagateLoader cssOverride={overrideStyle} color="#fff" />
+              ) : (
+                "Sign Up"
+              )}
             </button>
 
             <div className="flex items-center mb-3 gap-3 justify-center">

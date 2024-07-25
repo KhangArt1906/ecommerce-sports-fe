@@ -36,7 +36,7 @@ const ProviderDashboard = () => {
         <div className="flex justify-between items-center p-5 bg-[#25282a] rounded-xl gap-3">
           <div className="flex flex-col justify-start items-start text-white">
             <h2 className="text-3xl font-bold t">22</h2>
-            <span className="text-md font-medium ">Sellers: </span>
+            <span className="text-md font-medium ">Providers: </span>
           </div>
 
           <div className="w-[40px] h-[47px] rounded-full bg-[#fff] text-black flex justify-center items-center text-xl">

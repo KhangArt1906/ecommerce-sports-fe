@@ -1,8 +1,12 @@
 import { AiOutlineDashboard, AiOutlineShoppingCart } from "react-icons/ai";
 import { BiCategory } from "react-icons/bi";
 import { FaUsers } from "react-icons/fa";
-import { MdPayment } from "react-icons/md";
-import { IoIosChatbubbles } from "react-icons/io";
+import { MdPayment, MdViewList } from "react-icons/md";
+import { IoIosChatbubbles, IoMdAdd } from "react-icons/io";
+import { TbBasketDiscount } from "react-icons/tb";
+import { BsCartCheck, BsFillChatQuoteFill } from "react-icons/bs";
+import { IoChatbox } from "react-icons/io5";
+import { CgProfile } from "react-icons/cg";
 
 export const allNav = [
   {
@@ -49,66 +53,66 @@ export const allNav = [
   },
   // Provider
   {
-    id: 9,
+    id: 7,
     title: "Dashboard",
     icon: <AiOutlineDashboard />,
     role: "provider",
     path: "/provider/dashboard",
   },
   {
-    id: 10,
+    id: 8,
     title: "Add Product",
-    icon: <AiOutlineDashboard />,
+    icon: <IoMdAdd />,
     role: "provider",
     path: "/provider/dashboard/add-product",
   },
   {
-    id: 11,
+    id: 9,
     title: "All Product",
-    icon: <AiOutlineDashboard />,
+    icon: <MdViewList />,
     role: "provider",
     path: "/provider/dashboard/products",
   },
   {
-    id: 12,
+    id: 10,
     title: "Discount Product",
-    icon: <AiOutlineDashboard />,
+    icon: <TbBasketDiscount />,
     role: "provider",
     path: "/provider/dashboard/discount-product",
   },
   {
-    id: 13,
+    id: 11,
     title: "Orders",
-    icon: <AiOutlineDashboard />,
+    icon: <BsCartCheck />,
     role: "provider",
     path: "/provider/dashboard/orders",
   },
   {
-    id: 14,
+    id: 12,
     title: "Payments",
-    icon: <AiOutlineDashboard />,
+    icon: <MdPayment />,
     role: "provider",
     path: "/provider/dashboard/payments",
   },
   {
-    id: 15,
+    id: 13,
     title: "Chat Customer",
-    icon: <AiOutlineDashboard />,
+    icon: <BsFillChatQuoteFill />,
     role: "provider",
     path: "/provider/dashboard/chat-customer",
   },
   {
-    id: 16,
+    id: 14,
     title: "Chat Support",
-    icon: <AiOutlineDashboard />,
+    icon: <IoChatbox />,
     role: "provider",
     path: "/provider/dashboard/chat-support",
   },
   // Profile Provider Page
   {
-    id: 17,
+    id: 15,
     title: "Provider Profile",
-    icon: <AiOutlineDashboard />,
+    icon: <CgProfile />,
     role: "provider",
     path: "/provider/dashboard/profile",
   },

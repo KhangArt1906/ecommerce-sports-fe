@@ -52,7 +52,7 @@ export const providerRoutes = [
   {
     path: "/provider/dashboard/products",
     element: <AllProducts />,
-    arole: "provider",
+    role: "provider",
     status: "active",
   },
   {
@@ -68,7 +68,7 @@ export const providerRoutes = [
     ability: ["active", "not active"],
   },
   {
-    path: "/provider/dashboard/order/details/:ordersID",
+    path: "/provider/dashboard/order/details/:orderID",
     element: <ProviderOrdersDetail />,
     role: "provider",
     ability: ["active", "not active"],
